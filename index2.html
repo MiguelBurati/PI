@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="index.html">
+            <img id="logoFio" src="https://www.unifio.edu.br/wp-content/uploads/2020/03/Unifio-Logo-Azul.png" alt="unifio-logo">
+        </a>
+        <a href="tabela.html">
+            <img id="tabela" src="tabela-de-dados.png" alt="tabela">
+        </a>
+    </header>
+    <div class="container">
+        <form>
+            <section id="form">
+                <div >
+                    <div>
+                        <label for="name">Nome:</label> 
+                        <input type="text" class="inputTam" id="name" placeholder=" Insira seu nome" required>
+                    </div>
+                    <div>
+                        <label for="age">Idade:</label>
+                        <input type="number" class="inputTam" id="age" placeholder="  Insira sua idade" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" class="inputTam" id="email" placeholder="Insira seu email" required>
+                    </div>
+                    <div class="opt">
+                        <br>
+                        <label for="sexo">Sexo:</label>
+                        <label id="labelConfig" for="opt"><input type="radio" name="sexo" id="opt" checked required>Masculino</label>                   
+                        <label id="labelConfig" for="optFem"><input type="radio" name="sexo" id="optFem" required>Feminino</label>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <button type="reset" id="reset">Resetar</button>
+                <button type="button" id="button">Prosseguir!</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
